@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         // Criando instâncias de Time
         ScrumMaster scrumMaster = new ScrumMaster("Carlos", "senha123");
         Analista analista = new Analista("Ana", "senha456");
