@@ -22,9 +22,9 @@ public class Main {
         analista.autenticar();
         po.autenticar();
 
-        // Criando uma tarefa inicial
-        Task task = new Task();
-        task.criarTask(); // Inicializa a tarefa
+        // Criando uma tarefa inicial com título
+        Task task = new Task("Minha Tarefa Inicial");
+        System.out.println("Título da Tarefa: " + task.getTitle());
         System.out.println("Estado inicial: " + task.getEstadoAtual());
 
         // Criando estados para a tarefa
