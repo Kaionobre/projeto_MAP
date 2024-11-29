@@ -12,7 +12,7 @@ public class Task {
     }
 
     public Estado getEstadoAtual() {
-        return estadoAtual;
+        return estadoAtual; // Corrigido para retornar o estadoAtual
     }
 
     public void setEstado(Estado novoEstado) {
