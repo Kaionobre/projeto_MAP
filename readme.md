@@ -50,24 +50,35 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
 ## Caso de uso: 
 ![image](https://github.com/user-attachments/assets/653fb489-f85d-4387-98f3-ac0e4e4208ac)
 
+---
+
 ## Diagrama de classes:
-![image](https://github.com/user-attachments/assets/9caa66ff-31d8-42c0-9bff-45c46176a08f)
+![image](https://github.com/user-attachments/assets/9caa66ff-31d8-42c0-9bff-45c46176a08f) 
+
+---
 
 ## Diagrama de atividades:
+
+---
 
 ## Padrão utilizado: ⛔
    - O padrão **State** foi utilizado no projeto de gerenciador de tasks para representar e gerenciar os diferentes estados de uma tarefa (Task). Esse padrão permite que o comportamento de uma tarefa varie dinamicamente dependendo do seu estado atual.
    - Utilizado para gerenciar os estados das tarefas de forma flexível.
    - Classes como `Andamento`, `Atraso` e `Concluido` representam os diferentes estados das tarefas.
 
+---
+
 ## Testes: ✍🏻
    - **Teste de Unidade:** O foco é testar individualmente a lógica de mudança de estado dentro da classe Task. Este tipo de teste isola o comportamento da classe e verifica se ela responde corretamente às mudanças de estado.
 
    - **Teste de Integração:** O teste de integração verifica como as diferentes partes do sistema (no caso, a criação e transição de estados) interagem entre si. Ele verifica se, ao integrar as partes, o sistema ainda funciona como esperado.
 
+---
 
 ## Mecânicas de refatoração: ♻️
 
+
+---
 ## Frameworks e tecnologias utilizadas: 
    - **JUnit** - Teste de Unidade e de Integração
    - **Maven**
