@@ -12,13 +12,19 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
 
 ---
 
+## Contexto - Problema - Solução
+O **Gerenciador de Tasks** foi criado para resolver problemas comuns enfrentados por equipes de desenvolvimento de software, como a falta de controle sobre o andamento das tarefas e a dificuldade de comunicação entre os membros do time. Sem uma ferramenta organizada, as tarefas podem se perder no meio do processo, resultar em prazos não cumpridos e gerar confusão entre os responsáveis pelas atividades.
+
+A principal funcionalidade do sistema é a gestão dos estados das tarefas, que passam por diferentes estágios durante seu ciclo de vida. Usando o padrão de design **State**, o sistema permite que a tarefa seja marcada como "Em andamento", "Em atraso" ou "Concluída", garantindo que todos os membros do time, como Scrum Masters, Analistas e Product Owners, saibam exatamente em que ponto cada tarefa se encontra. Através desse gerenciamento de estados, é possível aumentar a transparência e a comunicação dentro do time, evitando que as tarefas fiquem em aberto ou que detalhes importantes sejam esquecidos.
+
+O Gerenciador de Tasks também permite que os responsáveis pelas tarefas alterem seu status conforme o progresso. Esse fluxo contínuo facilita o acompanhamento das atividades, tornando o processo de desenvolvimento mais ágil e eficiente, além de promover um maior controle sobre o cumprimento dos prazos e a entrega das funcionalidades.
+
+---
+
 ## Funcionalidades Principais 📜
 1. **Gerenciamento de Tarefas**
    - Adicionar novas tarefas.
-   - Alterar o estado de uma tarefa para:
-     - **Em andamento**
-     - **Atraso**
-     - **Concluído**
+   - Alterar o estado de uma tarefa para: **Em andamento**, **Atraso** e **Concluído**
    - Listar tarefas com seus estados atuais.
 
 2. **Interface Gráfica**
@@ -26,13 +32,7 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
    - Tela inicial para gerenciar tarefas.
    - Tela para criar e gerenciar projetos.
 
-
-## Contexto - Problema - Solução
--- O **Gerenciador de Tasks** foi criado para resolver problemas comuns enfrentados por equipes de desenvolvimento de software, como a falta de controle sobre o andamento das tarefas e a dificuldade de comunicação entre os membros do time. Sem uma ferramenta organizada, as tarefas podem se perder no meio do processo, resultar em prazos não cumpridos e gerar confusão entre os responsáveis pelas atividades.
-
-A principal funcionalidade do sistema é a gestão dos estados das tarefas, que passam por diferentes estágios durante seu ciclo de vida. Usando o padrão de design **State**, o sistema permite que a tarefa seja marcada como "Em andamento", "Em atraso" ou "Concluída", garantindo que todos os membros do time, como Scrum Masters, Analistas e Product Owners, saibam exatamente em que ponto cada tarefa se encontra. Através desse gerenciamento de estados, é possível aumentar a transparência e a comunicação dentro do time, evitando que as tarefas fiquem em aberto ou que detalhes importantes sejam esquecidos.
-
-O Gerenciador de Tasks também permite que os responsáveis pelas tarefas alterem seu status conforme o progresso. Esse fluxo contínuo facilita o acompanhamento das atividades, tornando o processo de desenvolvimento mais ágil e eficiente, além de promover um maior controle sobre o cumprimento dos prazos e a entrega das funcionalidades.
+--- 
 
 ## Requisitos ✅
 1. **Requisitos funcionais:**
@@ -45,7 +45,8 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
    - Desempenho: As mudanças de estado devem ocorrer instantaneamente para garantir uma experiência de usuário fluida.
    - Usabilidade: A interface de exibição de tarefas e estados deve ser intuitiva e fácil de navegar.
    - Escalabilidade: O sistema deve ser capaz de gerenciar centenas de tarefas sem perda significativa de desempenho.
-
+     
+--- 
 ## Caso de uso: 
 ![image](https://github.com/user-attachments/assets/653fb489-f85d-4387-98f3-ac0e4e4208ac)
 
