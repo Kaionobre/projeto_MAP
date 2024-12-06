@@ -21,4 +21,12 @@ public class Time {
     public String getCargo() {
         return cargo;
     }
+
+    public boolean podeCriarTarefas() {
+        return false; // Por padrão, ninguém pode criar tarefas
+    }
+
+    public boolean podeAlterarTarefas() {
+        return false; // Por padrão, ninguém pode alterar tarefas
+    }
 }
