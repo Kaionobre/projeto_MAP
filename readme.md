@@ -58,6 +58,8 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
 ---
 
 ## Diagrama de atividades
+![image](https://github.com/user-attachments/assets/95b0c8f7-00e5-4d0f-8797-8987b577048a)
+
 
 ---
 
