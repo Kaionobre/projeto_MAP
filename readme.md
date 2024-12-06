@@ -53,7 +53,7 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
 ## Diagrama de atividades:
 
 ## Padrão utilizado: 
-   - O padrão State foi utilizado no projeto de gerenciador de tasks para representar e gerenciar os diferentes estados de uma tarefa (Task). Esse padrão permite que o comportamento de uma tarefa varie dinamicamente dependendo do seu estado atual.
+   - O padrão **State** foi utilizado no projeto de gerenciador de tasks para representar e gerenciar os diferentes estados de uma tarefa (Task). Esse padrão permite que o comportamento de uma tarefa varie dinamicamente dependendo do seu estado atual.
 
 ## Testes: 
    - **Teste de Unidade: O foco é testar individualmente a lógica de mudança de estado dentro da classe Task. Este tipo de teste isola o comportamento da classe e verifica se ela responde corretamente às mudanças de estado.**
