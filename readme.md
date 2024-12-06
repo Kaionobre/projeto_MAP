@@ -78,11 +78,13 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
 ---
 
 ## Mecânicas de refatoração ♻️
-   - **Replace Conditional with Polymorphism**: Na classe Time, o método autenticar() poderia ter uma estrutura condicional para verificar o cargo (ex.: Scrum Master, Product Owner, Developer), e realizar ações específicas para cada cargo. Isso violaria princípios de design, como o princípio aberto/fechado (SOLID), além de tornar o código mais difícil de manter e escalar.
-   - **Solução**:
-     - Transformar Time em uma classe base abstrata, contendo os atributos comuns e o método abstrato autenticar().
-     - Criar subclasses para cada cargo específico (ScrumMaster, ProductOwner, Developer), onde cada uma implementa seu comportamento único no método autenticar().
-     - Eliminar a necessidade de condições explícitas, utilizando polimorfismo para delegar o comportamento dinamicamente.
+   - **Extract Method**:
+   - A lógica de validação dos dados dentro do método salvar() foi extraída para um método separado chamado validarDados().
+   - O método salvar() agora foca apenas em salvar os dados, chamando o método validarDados() para verificar se os dados estão corretos antes de realizar a operação de salvamento.
+
+   -**Encapsulate Field**:
+   - Antes da refatoração, os campos da classes eram acessados diretamente (mesmo sendo privados).
+   - Com a refatoração, esses campos foram mantidos como privados, mas agora são acessados e modificados por meio de métodos getter e setter.
 
 ---
 ## Frameworks e tecnologias utilizadas⚡
