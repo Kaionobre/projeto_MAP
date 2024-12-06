@@ -30,6 +30,29 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
    - Utilizado para gerenciar os estados das tarefas de forma flexível.
    - Classes como `Andamento`, `Atraso` e `Concluido` representam os diferentes estados das tarefas.
 
+## Contexto - Problema - Solução
+
+## Requisitos
+
+## Caso de uso: 
+![image](https://github.com/user-attachments/assets/653fb489-f85d-4387-98f3-ac0e4e4208ac)
+
+## Diagrama de classes:
+![image](https://github.com/user-attachments/assets/9caa66ff-31d8-42c0-9bff-45c46176a08f)
+
+## Diagrama de atividades:
+
+## Padrão utilizado: 
+   - O padrão State foi utilizado no projeto de gerenciador de tasks para representar e gerenciar os diferentes estados de uma tarefa (Task). Esse padrão permite que o comportamento de uma tarefa varie dinamicamente dependendo do seu estado atual.
+
+**Teste de unidade**: 
+**Teste de integração**:
+
+## Mecânicas de refatoração:
+
+
+
+
 
 
 
