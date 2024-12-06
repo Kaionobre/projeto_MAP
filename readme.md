@@ -35,47 +35,47 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
 --- 
 
 ## Requisitos ✅
-1. **Requisitos funcionais:**
+1. **Requisitos funcionais**
    - O sistema deve permitir a criação de tarefas com um estado inicial definido como "Criado".
    - A tarefa deve ser capaz de transitar entre os estados: Criado, Em atraso e Concluído.
    - Os estados das tarefas devem refletir o progresso ou o atraso com base nas atualizações feitas pelos membros do time.
    - O sistema deve exibir claramente o estado atual de uma tarefa para os usuários.
      
-2. **Requisitos não funcionais:**
+2. **Requisitos não funcionais**
    - Desempenho: As mudanças de estado devem ocorrer instantaneamente para garantir uma experiência de usuário fluida.
    - Usabilidade: A interface de exibição de tarefas e estados deve ser intuitiva e fácil de navegar.
    - Escalabilidade: O sistema deve ser capaz de gerenciar centenas de tarefas sem perda significativa de desempenho.
      
 --- 
-## Caso de uso: 
+## Caso de uso 
 ![image](https://github.com/user-attachments/assets/653fb489-f85d-4387-98f3-ac0e4e4208ac)
 
 ---
 
-## Diagrama de classes:
+## Diagrama de classes
 ![image](https://github.com/user-attachments/assets/9caa66ff-31d8-42c0-9bff-45c46176a08f) 
 
 ---
 
-## Diagrama de atividades:
+## Diagrama de atividades
 
 ---
 
-## Padrão utilizado: ⛔
+## Padrão utilizado ⛔
    - O padrão **State** foi utilizado no projeto de gerenciador de tasks para representar e gerenciar os diferentes estados de uma tarefa (Task). Esse padrão permite que o comportamento de uma tarefa varie dinamicamente dependendo do seu estado atual.
    - Utilizado para gerenciar os estados das tarefas de forma flexível.
    - Classes como `Andamento`, `Atraso` e `Concluido` representam os diferentes estados das tarefas.
 
 ---
 
-## Testes: ✍🏻
+## Testes ✍🏻
    - **Teste de Unidade:** O foco é testar individualmente a lógica de mudança de estado dentro da classe Task. Este tipo de teste isola o comportamento da classe e verifica se ela responde corretamente às mudanças de estado.
 
    - **Teste de Integração:** O teste de integração verifica como as diferentes partes do sistema (no caso, a criação e transição de estados) interagem entre si. Ele verifica se, ao integrar as partes, o sistema ainda funciona como esperado.
 
 ---
 
-## Mecânicas de refatoração: ♻️
+## Mecânicas de refatoração ♻️
    - Replace Conditional with Polymorphism: Na classe Time, o método autenticar() poderia ter uma estrutura condicional para verificar o cargo (ex.: Scrum Master, Product Owner, Developer), e realizar ações específicas para cada cargo. Isso violaria princípios de design, como o princípio aberto/fechado (SOLID), além de tornar o código mais difícil de manter e escalar.
    - **Solução**:
         - Transformar Time em uma classe base abstrata, contendo os atributos comuns e o método abstrato autenticar().
@@ -83,7 +83,7 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
         - Eliminar a necessidade de condições explícitas, utilizando polimorfismo para delegar o comportamento dinamicamente.
 
 ---
-## Frameworks e tecnologias utilizadas: ⚡
+## Frameworks e tecnologias utilizadas⚡
    - **JUnit**: Utilizado para realizar os testes de unidade e de integração, garantindo que o sistema funcione corretamente em diferentes cenários e que todas as transições de estados da tarefa sejam executadas    como esperado.
    - **Maven**: Ferramenta de automação de build que facilita o gerenciamento de dependências, execução de testes e empacotamento da aplicação, garantindo que o processo de desenvolvimento e deploy seja mais        eficiente.
    - **Swing**: Biblioteca gráfica utilizada para desenvolver a interface do usuário da aplicação, proporcionando uma experiência interativa para os membros do time ao gerenciar e visualizar as tarefas.
