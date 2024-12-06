@@ -76,7 +76,11 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
 ---
 
 ## Mecânicas de refatoração: ♻️
-
+   - Replace Conditional with Polymorphism: Na classe Time, o método autenticar() poderia ter uma estrutura condicional para verificar o cargo (ex.: Scrum Master, Product Owner, Developer), e realizar ações específicas para cada cargo. Isso violaria princípios de design, como o princípio aberto/fechado (SOLID), além de tornar o código mais difícil de manter e escalar.
+   ## **Soluções**:
+        - Transformar Time em uma classe base abstrata, contendo os atributos comuns e o método abstrato autenticar().
+        - Criar subclasses para cada cargo específico (ScrumMaster, ProductOwner, Developer), onde cada uma implementa seu comportamento único no método autenticar().
+        - Eliminar a necessidade de condições explícitas, utilizando polimorfismo para delegar o comportamento dinamicamente.
 
 ---
 ## Frameworks e tecnologias utilizadas: 
