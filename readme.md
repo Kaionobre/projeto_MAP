@@ -78,13 +78,13 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
 ---
 
 ## Mecânicas de refatoração ♻️
-   - **Extract Method**:
-   - A lógica de validação dos dados dentro do método salvar() foi extraída para um método separado chamado validarDados().
-   - O método salvar() agora foca apenas em salvar os dados, chamando o método validarDados() para verificar se os dados estão corretos antes de realizar a operação de salvamento.
+   -**Extract Method**:
+      - A lógica de validação dos dados dentro do método salvar() foi extraída para um método separado chamado validarDados().
+      - O método salvar() agora foca apenas em salvar os dados, chamando o método validarDados() para verificar se os dados estão corretos antes de realizar a operação de salvamento.
 
    -**Encapsulate Field**:
-   - Antes da refatoração, os campos da classes eram acessados diretamente (mesmo sendo privados).
-   - Com a refatoração, esses campos foram mantidos como privados, mas agora são acessados e modificados por meio de métodos getter e setter.
+      - Antes da refatoração, os campos da classes eram acessados diretamente (mesmo sendo privados).
+      - Com a refatoração, esses campos foram mantidos como privados, mas agora são acessados e modificados por meio de métodos getter e setter.
 
 ---
 ## Frameworks e tecnologias utilizadas⚡
