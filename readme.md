@@ -83,7 +83,7 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
         - Eliminar a necessidade de condições explícitas, utilizando polimorfismo para delegar o comportamento dinamicamente.
 
 ---
-## Frameworks e tecnologias utilizadas: 
+## Frameworks e tecnologias utilizadas: ⚡
    - **JUnit** - Teste de Unidade e de Integração
    - **Maven**
    - **Swing**
