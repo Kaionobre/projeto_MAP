@@ -1,10 +1,10 @@
-# Gerenciador de Projetos
+# Gerenciador de Projetos ⚙️
 
 Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, utilizando conceitos de Programação Orientada a Objetos (POO) e o **padrão de projeto State** para gerenciar estados das tarefas. O sistema possui uma interface gráfica desenvolvida com **Swing** para facilitar a interação do usuário.
 
 ---
 
-## Participantes do Projeto
+## Participantes do Projeto 👤
 - **Kaio Nóbrega**  
 - **Ester Medeiros**  
 - **Iago Dutra**  
@@ -12,7 +12,7 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
 
 ---
 
-## Funcionalidades Principais
+## Funcionalidades Principais 📜
 1. **Gerenciamento de Tarefas**
    - Adicionar novas tarefas.
    - Alterar o estado de uma tarefa para:
@@ -29,7 +29,7 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
 
 ## Contexto - Problema - Solução
 
-## Requisitos
+## Requisitos ✅
 1. **Requisitos funcionais:**
    - O sistema deve permitir a criação de tarefas com um estado inicial definido como "Criado".
    - A tarefa deve ser capaz de transitar entre os estados: Criado, Em atraso e Concluído.
@@ -49,18 +49,18 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
 
 ## Diagrama de atividades:
 
-## Padrão utilizado: 
+## Padrão utilizado: ⛔
    - O padrão **State** foi utilizado no projeto de gerenciador de tasks para representar e gerenciar os diferentes estados de uma tarefa (Task). Esse padrão permite que o comportamento de uma tarefa varie dinamicamente dependendo do seu estado atual.
    - Utilizado para gerenciar os estados das tarefas de forma flexível.
    - Classes como `Andamento`, `Atraso` e `Concluido` representam os diferentes estados das tarefas.
 
-## Testes: 
+## Testes: ✔️
    - **Teste de Unidade:** O foco é testar individualmente a lógica de mudança de estado dentro da classe Task. Este tipo de teste isola o comportamento da classe e verifica se ela responde corretamente às mudanças de estado.
 
    - **Teste de Integração:** O teste de integração verifica como as diferentes partes do sistema (no caso, a criação e transição de estados) interagem entre si. Ele verifica se, ao integrar as partes, o sistema ainda funciona como esperado.
 
 
-## Mecânicas de refatoração:
+## Mecânicas de refatoração: ♻️
 
 ## Frameworks e tecnologias utilizadas: 
    - **JUnit** - Teste de Unidade e de Integração
