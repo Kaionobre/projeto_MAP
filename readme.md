@@ -33,6 +33,16 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
 ## Contexto - Problema - Solução
 
 ## Requisitos
+1. **Requisitos funcionais:**
+   - O sistema deve permitir a criação de tarefas com um estado inicial definido como "Criado".
+   - A tarefa deve ser capaz de transitar entre os estados: Criado, Em atraso e Concluído.
+   - Os estados das tarefas devem refletir o progresso ou o atraso com base nas atualizações feitas pelos membros do time.
+   - O sistema deve exibir claramente o estado atual de uma tarefa para os usuários.
+     
+2. **Requisitos não funcionais:**
+   - Desempenho: As mudanças de estado devem ocorrer instantaneamente para garantir uma experiência de usuário fluida.
+   - Usabilidade: A interface de exibição de tarefas e estados deve ser intuitiva e fácil de navegar.
+   - Escalabilidade: O sistema deve ser capaz de gerenciar centenas de tarefas sem perda significativa de desempenho.
 
 ## Caso de uso: 
 ![image](https://github.com/user-attachments/assets/653fb489-f85d-4387-98f3-ac0e4e4208ac)
