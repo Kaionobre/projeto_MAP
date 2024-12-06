@@ -84,9 +84,9 @@ O Gerenciador de Tasks também permite que os responsáveis pelas tarefas altere
 
 ---
 ## Frameworks e tecnologias utilizadas: ⚡
-   - **JUnit** - Teste de Unidade e de Integração
-   - **Maven**
-   - **Swing**
+   - **JUnit**: Utilizado para realizar os testes de unidade e de integração, garantindo que o sistema funcione corretamente em diferentes cenários e que todas as transições de estados da tarefa sejam executadas    como esperado.
+   - **Maven**: Ferramenta de automação de build que facilita o gerenciamento de dependências, execução de testes e empacotamento da aplicação, garantindo que o processo de desenvolvimento e deploy seja mais        eficiente.
+   - **Swing**: Biblioteca gráfica utilizada para desenvolver a interface do usuário da aplicação, proporcionando uma experiência interativa para os membros do time ao gerenciar e visualizar as tarefas.
 
 
 
