@@ -26,9 +26,6 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
    - Tela inicial para gerenciar tarefas.
    - Tela para criar e gerenciar projetos.
 
-3. **Padrão de Projeto: State**
-   - Utilizado para gerenciar os estados das tarefas de forma flexível.
-   - Classes como `Andamento`, `Atraso` e `Concluido` representam os diferentes estados das tarefas.
 
 ## Contexto - Problema - Solução
 
@@ -54,16 +51,21 @@ Este é um projeto de gerenciamento de tasks e foi desenvolvido em **Java**, uti
 
 ## Padrão utilizado: 
    - O padrão **State** foi utilizado no projeto de gerenciador de tasks para representar e gerenciar os diferentes estados de uma tarefa (Task). Esse padrão permite que o comportamento de uma tarefa varie dinamicamente dependendo do seu estado atual.
+   - Utilizado para gerenciar os estados das tarefas de forma flexível.
+   - Classes como `Andamento`, `Atraso` e `Concluido` representam os diferentes estados das tarefas.
 
 ## Testes: 
-   - **Teste de Unidade: O foco é testar individualmente a lógica de mudança de estado dentro da classe Task. Este tipo de teste isola o comportamento da classe e verifica se ela responde corretamente às mudanças de estado.**
+   - **Teste de Unidade:** O foco é testar individualmente a lógica de mudança de estado dentro da classe Task. Este tipo de teste isola o comportamento da classe e verifica se ela responde corretamente às mudanças de estado.
 
-   - **Teste de Integração: O teste de integração verifica como as diferentes partes do sistema (no caso, a criação e transição de estados) interagem entre si. Ele verifica se, ao integrar as partes, o sistema ainda funciona como esperado.**
+   - **Teste de Integração:** O teste de integração verifica como as diferentes partes do sistema (no caso, a criação e transição de estados) interagem entre si. Ele verifica se, ao integrar as partes, o sistema ainda funciona como esperado.
 
 
 ## Mecânicas de refatoração:
 
-
+## Frameworks e tecnologias utilizadas: 
+   - **JUnit** - Teste de Unidade e de Integração
+   - **Maven**
+   - **Swing**
 
 
 
